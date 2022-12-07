@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="saiextensions_8h" kind="file" language="C++">
+    <compoundname>saiextensions.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includes refid="saitypesextensions_8h" local="yes">saitypesextensions.h</includes>
+    <includes refid="saiswitchextensions_8h" local="yes">saiswitchextensions.h</includes>
+    <includes refid="saiexperimentalbmtor_8h" local="yes">saiexperimentalbmtor.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="7">
+        <label>saiswitchextensions.h</label>
+        <link refid="saiswitchextensions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="8">
+        <label>saiexperimentalbmtor.h</label>
+        <link refid="saiexperimentalbmtor_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/denys.levandovskyi/Homework/SAI/SAI_HW/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>saitypesextensions.h</label>
+        <link refid="saitypesextensions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="saiextensions_8h_1a46f11801b816b0a3a9336f0777066a0e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_api_extensions_t</name>
+        <enumvalue id="saiextensions_8h_1a46f11801b816b0a3a9336f0777066a0eaa2bc9037011bbac3377e443261357213" prot="public">
+          <name>SAI_API_EXTENSIONS_RANGE_START</name>
+          <initializer>= SAI_API_MAX</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiextensions_8h_1a46f11801b816b0a3a9336f0777066a0eae1876cc75b41181893986d63d51106d4" prot="public">
+          <name>SAI_API_BMTOR</name>
+          <initializer>= SAI_API_EXTENSIONS_RANGE_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiextensions_8h_1a46f11801b816b0a3a9336f0777066a0ea58b03c3dea1b1c6fe71d1353531003d0" prot="public">
+          <name>SAI_API_EXTENSIONS_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Extensions to SAI APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           free </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/denys.levandovskyi/Homework/SAI/SAI_HW/experimental/saiextensions.h" line="43" column="1" bodyfile="/home/denys.levandovskyi/Homework/SAI/SAI_HW/experimental/saiextensions.h" bodystart="42" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="saiextensions_8h_1a68be46f78d867c8b68f75b67cfc3ebee" prot="public" static="no">
+        <type>enum <ref refid="saiextensions_8h_1a46f11801b816b0a3a9336f0777066a0e" kindref="member">_sai_api_extensions_t</ref></type>
+        <definition>typedef enum _sai_api_extensions_t sai_api_extensions_t</definition>
+        <argsstring></argsstring>
+        <name>sai_api_extensions_t</name>
+        <briefdescription>
+<para>Extensions to SAI APIs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           free </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/denys.levandovskyi/Homework/SAI/SAI_HW/experimental/saiextensions.h" line="52" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines extensions of the Switch Abstraction Interface (SAI) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2018 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/denys.levandovskyi/Homework/SAI/SAI_HW/experimental/saiextensions.h"/>
+  </compounddef>
+</doxygen>

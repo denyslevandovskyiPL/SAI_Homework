@@ -1,0 +1,1085 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="saihash_8h" kind="file" language="C++">
+    <compoundname>saihash.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>inc/saihash.h</label>
+        <link refid="saihash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>inc/sai.h</label>
+        <link refid="sai_8h"/>
+      </node>
+      <node id="1">
+        <label>inc/saihash.h</label>
+        <link refid="saihash_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__hash__api__t" prot="public">_sai_hash_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group___s_a_i_h_a_s_h_1gafcc31874ad58eb9d8c620352bd1e5b4e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_native_hash_field_t</name>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead695bcf3d99c7cdc3485c680d942e5a4" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_SRC_IP</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Native hash field source IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Also, refers to the outer source IP in case for encapsulated packets. Used for both IPv4 and IPv6 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eab7009ae1de45030fafe7faa07d8cb6c9" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_DST_IP</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>Native hash field destination IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Also, refers to the outer source IP in case for encapsulated packets. Used for both IPv4 and IPv6 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf3987ca4b48f676598b51759f1db5c39" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_SRC_IP</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner source IP </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea80caff89cc144e053bf0ef02ae25410b" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_DST_IP</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner destination IP </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eadd63d8a95550656f54ce224e6afb58ee" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_SRC_IPV4</name>
+          <initializer>= 0x00000019</initializer>
+          <briefdescription>
+<para>Native hash field source IPv4. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Also, refers to the outer source IPv4 in case for encapsulated packets </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea93cbc58e012ed734a558cf1d571b0e58" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_DST_IPV4</name>
+          <initializer>= 0x0000001a</initializer>
+          <briefdescription>
+<para>Native hash field destination IPv4. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Also, refers to the outer source IPv4 in case for encapsulated packets </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3c9cbd80abb6d3712c99abfc022bac40" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_SRC_IPV6</name>
+          <initializer>= 0x0000001b</initializer>
+          <briefdescription>
+<para>Native hash field source IPv6. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Also, refers to the outer source IPv6 in case for encapsulated packets </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea4dd4cc3db824239bb2ef9bce5cdc37c3" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_DST_IPV6</name>
+          <initializer>= 0x0000001c</initializer>
+          <briefdescription>
+<para>Native hash field destination IPv6. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Also, refers to the outer source IPv6 in case for encapsulated packets </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea367b671a9089f8bb7a919130d632e630" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_SRC_IPV4</name>
+          <initializer>= 0x0000001d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner source IPv4 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eabd2ae9a9f46fc373d9c1041c55d9bafb" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_DST_IPV4</name>
+          <initializer>= 0x0000001e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner destination IPv4 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eac34993e66f25ad4d641169894a760b60" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_SRC_IPV6</name>
+          <initializer>= 0x0000001f</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner source IPv6 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea5509656694ca609c823c4eb77a88d6aa" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_DST_IPV6</name>
+          <initializer>= 0x00000020</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner destination IPv6 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea9cfe07ba39a97aa861ff25284a3064ac" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_VLAN_ID</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field vlan id </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead6f2c3f5a7b9733044d29c9d049d6243" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_IP_PROTOCOL</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field IP protocol </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea302ec3e14c84b996c174be567c70da16" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_ETHERTYPE</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field Ethernet type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea881ea9cf3125c1adfe63621cd5e98c4a" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_L4_SRC_PORT</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field L4 source port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea20f5981b96e26949939851e44260e540" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_L4_DST_PORT</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field L4 destination port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea0affb08dba095285c715b71fa43fbf2e" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_SRC_MAC</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field source MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eae8b5c91afaf80e3cba98685caca2e8ca" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_DST_MAC</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field destination MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea69e6c7b1f8f2e74f7ac7988955b589ea" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_IN_PORT</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field source port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3938d937da86363f158be1f3b354edbc" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_IP_PROTOCOL</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner IP protocol </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf761bdad60066793b99f06d2f38cfa6f" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_ETHERTYPE</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner Ethernet type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea6a2b7c2e2d6ccd56060ffb2b9143ee10" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_L4_SRC_PORT</name>
+          <initializer>= 0x0000000e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner L4 source port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eab9d17d96e39807f7ef28e41d175d048e" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_L4_DST_PORT</name>
+          <initializer>= 0x0000000f</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner L4 destination port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eae5c11bb6d3ec50b3db78bee7149ffc78" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_SRC_MAC</name>
+          <initializer>= 0x00000010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner source MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea31122d88e74bbcc492f113c70186b01b" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_INNER_DST_MAC</name>
+          <initializer>= 0x00000011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field inner destination MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf0266386ace70c2438533a2950ee54e8" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_MPLS_LABEL_ALL</name>
+          <initializer>= 0x00000012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field entire MPLS label stack </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea23435c7074971d9b6257f171017eff4a" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_MPLS_LABEL_0</name>
+          <initializer>= 0x00000013</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field the top MPLS label </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3b9cf1d946a11d9cb950620a2ad2200c" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_MPLS_LABEL_1</name>
+          <initializer>= 0x00000014</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field second MPLS label from the top </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea5dc458366ebec2278b2624c1c02c3e92" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_MPLS_LABEL_2</name>
+          <initializer>= 0x00000015</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field third MPLS label from the top </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea99b6a612c12493f178acb68eb58cf524" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_MPLS_LABEL_3</name>
+          <initializer>= 0x00000016</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field fourth MPLS label from the top </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead89f14cf0086d4100156be3280782bbc" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_MPLS_LABEL_4</name>
+          <initializer>= 0x00000017</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field fifth MPLS label from the top </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eac1c59f2366a9d4c3c17e8a4ce5c1c07b" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_IPV6_FLOW_LABEL</name>
+          <initializer>= 0x00000018</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Native hash field IPv6 flow label </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea21d19a4bb7770bbf36c204b722bb470d" prot="public">
+          <name>SAI_NATIVE_HASH_FIELD_NONE</name>
+          <initializer>= 0x00000021</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No field - for compatibility, must be last </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for SAI native hash fields. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="40" column="1" bodyfile="inc/saihash.h" bodystart="39" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___s_a_i_h_a_s_h_1gaa1ffe88ed319e0474cb6edf2a97c9d80" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_fine_grained_hash_field_attr_t</name>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a0d164c178f5b40348d4642334f6a16bc" prot="public">
+          <name>SAI_FINE_GRAINED_HASH_FIELD_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80ac5c287667b46192f3b3657e2c3bad920" prot="public">
+          <name>SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD</name>
+          <initializer>= SAI_FINE_GRAINED_HASH_FIELD_ATTR_START</initializer>
+          <briefdescription>
+<para>Hash native field ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:\n  @@type           sai_native_hash_field_t @par Flags:\n  @@flags          CREATE_ONLY @par Default value:\n  @@default        SAI_NATIVE_HASH_FIELD_NONE </title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a17771d987f052d0c7f6f04a64ffaf951" prot="public">
+          <name>SAI_FINE_GRAINED_HASH_FIELD_ATTR_IPV4_MASK</name>
+          <briefdescription>
+<para>Mask for a IPv4 address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:\n  @@type           sai_ip4_t @par Flags:\n  @@flags          MANDATORY_ON_CREATE | CREATE_ONLY @par Condition:\n  @@condition      SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD == SAI_NATIVE_HASH_FIELD_SRC_IPV4 or SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD == SAI_NATIVE_HASH_FIELD_DST_IPV4 or SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD == SAI_NATIVE_HASH_FIELD_INNER_SRC_IPV4 or SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD == SAI_NATIVE_HASH_FIELD_INNER_DST_IPV4 </title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a0b0903444ef1448f8239ee761659a56c" prot="public">
+          <name>SAI_FINE_GRAINED_HASH_FIELD_ATTR_IPV6_MASK</name>
+          <briefdescription>
+<para>Mask for a IPv6 address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:\n  @@type           sai_ip6_t @par Flags:\n  @@flags          MANDATORY_ON_CREATE | CREATE_ONLY @par Condition:\n  @@condition      SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD == SAI_NATIVE_HASH_FIELD_SRC_IPV6 or SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD == SAI_NATIVE_HASH_FIELD_DST_IPV6 or SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD == SAI_NATIVE_HASH_FIELD_INNER_SRC_IPV6 or SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD == SAI_NATIVE_HASH_FIELD_INNER_DST_IPV6 </title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80ab4ea6dd3ac77bb2aeaced5d799451cf4" prot="public">
+          <name>SAI_FINE_GRAINED_HASH_FIELD_ATTR_SEQUENCE_ID</name>
+          <briefdescription>
+<para>Optional field ordering. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Specifies in which order the fields are hashed, and defines in which fields should be associative for CRC with the same sequence ID. If not provided, it&apos;s up to SAI driver to choose.</para>
+<para><simplesect kind="par"><title>Value Type:\n  @@type           sai_uint32_t @par Flags:\n  @@flags          CREATE_ONLY @par Default value:\n  @@default        0 </title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a2cbf7560d8a37229b27478a720431380" prot="public">
+          <name>SAI_FINE_GRAINED_HASH_FIELD_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a4fc797460cf6223537f3ab62dd7515de" prot="public">
+          <name>SAI_FINE_GRAINED_HASH_FIELD_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a917e8bda1bf71203df54b4076036f83e" prot="public">
+          <name>SAI_FINE_GRAINED_HASH_FIELD_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Fine-grained hash field attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="181" column="1" bodyfile="inc/saihash.h" bodystart="180" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="enum" id="group___s_a_i_h_a_s_h_1gacf33b16b3be3be8e52293d3be67296f2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hash_attr_t</name>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a4184793b57e83ab1a822936334e05f13" prot="public">
+          <name>SAI_HASH_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a17eb90441fc43ee36062126830c47018" prot="public">
+          <name>SAI_HASH_ATTR_NATIVE_HASH_FIELD_LIST</name>
+          <initializer>= SAI_HASH_ATTR_START</initializer>
+          <briefdescription>
+<para>Hash native fields. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:\n  @@type           sai_s32_list_t sai_native_hash_field_t @par Flags:\n  @@flags          CREATE_AND_SET @par Default value:\n  @@default        empty </title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2ab9669254f90c0194654987c4275d04d1" prot="public">
+          <name>SAI_HASH_ATTR_UDF_GROUP_LIST</name>
+          <briefdescription>
+<para>Hash UDF group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:\n  @@type           sai_object_list_t @par Flags:\n  @@flags          CREATE_AND_SET @par Allowed object types\n  @@objects        SAI_OBJECT_TYPE_UDF_GROUP @par Default value:\n  @@default        empty </title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a18cd1f3beaed46b889a3a6d5635d7187" prot="public">
+          <name>SAI_HASH_ATTR_FINE_GRAINED_HASH_FIELD_LIST</name>
+          <briefdescription>
+<para>Hash fine-grained field list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:\n  @@type           sai_object_list_t @par Flags:\n  @@flags          CREATE_AND_SET @par Allowed object types\n  @@objects        SAI_OBJECT_TYPE_FINE_GRAINED_HASH_FIELD @par Default value:\n  @@default        empty </title><para></para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a9060751615e5b1a3761c25c19342b22c" prot="public">
+          <name>SAI_HASH_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2aee0e5b082bc9cba6f860cd244a5972f1" prot="public">
+          <name>SAI_HASH_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a6a55ede6c3f01a11adf3587c11622486" prot="public">
+          <name>SAI_HASH_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Hash attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="244" column="1" bodyfile="inc/saihash.h" bodystart="243" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1gaff8f0a65800c12f553728c9f8fcef704" prot="public" static="no">
+        <type>enum <ref refid="group___s_a_i_h_a_s_h_1gafcc31874ad58eb9d8c620352bd1e5b4e" kindref="member">_sai_native_hash_field_t</ref></type>
+        <definition>typedef enum _sai_native_hash_field_t sai_native_hash_field_t</definition>
+        <argsstring></argsstring>
+        <name>sai_native_hash_field_t</name>
+        <briefdescription>
+<para>Attribute data for SAI native hash fields. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="175" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga3da50c10dba98635dfc71a140ae201d2" prot="public" static="no">
+        <type>enum <ref refid="group___s_a_i_h_a_s_h_1gaa1ffe88ed319e0474cb6edf2a97c9d80" kindref="member">_sai_fine_grained_hash_field_attr_t</ref></type>
+        <definition>typedef enum _sai_fine_grained_hash_field_attr_t sai_fine_grained_hash_field_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fine_grained_hash_field_attr_t</name>
+        <briefdescription>
+<para>Fine-grained hash field attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="238" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga7d62d7c094e7d32960599359a5fd67d4" prot="public" static="no">
+        <type>enum <ref refid="group___s_a_i_h_a_s_h_1gacf33b16b3be3be8e52293d3be67296f2" kindref="member">_sai_hash_attr_t</ref></type>
+        <definition>typedef enum _sai_hash_attr_t sai_hash_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hash_attr_t</name>
+        <briefdescription>
+<para>Hash attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="290" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga06b8e8eb6fa591a6b0d6c51e6041ad1d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_fine_grained_hash_field_fn) (_Out_ sai_object_id_t *fine_grained_hash_field_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *fine_grained_hash_field_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_fine_grained_hash_field_fn</name>
+        <briefdescription>
+<para>Create fine-grained hash field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">fine_grained_hash_field_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fine-grained hash field id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___s_a_i_s_t_a_t_u_s_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="302" column="9" bodyfile="inc/saihash.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1gae2e75c15f6bb33d1c593f69b31ccd4fe" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_fine_grained_hash_field_fn) (_In_ sai_object_id_t fine_grained_hash_field_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t fine_grained_hash_field_id)</argsstring>
+        <name>sai_remove_fine_grained_hash_field_fn</name>
+        <briefdescription>
+<para>Remove fine-grained hash field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fine_grained_hash_field_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fine-grained hash field id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___s_a_i_s_t_a_t_u_s_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="315" column="9" bodyfile="inc/saihash.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1gaa606c1e9c2477f70564bd5305ec1340a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_fine_grained_hash_field_attribute_fn) (_In_ sai_object_id_t fine_grained_hash_field_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t fine_grained_hash_field_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_fine_grained_hash_field_attribute_fn</name>
+        <briefdescription>
+<para>Set fine-grained hash field attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fine_grained_hash_field_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fine-grained hash field id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___s_a_i_s_t_a_t_u_s_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="326" column="9" bodyfile="inc/saihash.h" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga44286035158127eb2b24c2e7acf0be77" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_fine_grained_hash_field_attribute_fn) (_In_ sai_object_id_t fine_grained_hash_field_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t fine_grained_hash_field_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_fine_grained_hash_field_attribute_fn</name>
+        <briefdescription>
+<para>Get fine-grained hash field attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fine_grained_hash_field_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fine-grained hash field id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___s_a_i_s_t_a_t_u_s_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="339" column="9" bodyfile="inc/saihash.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga3c12c6e257eb324cebf98017fd8e7f16" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_hash_fn) (_Out_ sai_object_id_t *hash_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *hash_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_hash_fn</name>
+        <briefdescription>
+<para>Create hash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">hash_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___s_a_i_s_t_a_t_u_s_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="354" column="9" bodyfile="inc/saihash.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga35ba3a63f1581d746de9b1e3077bffde" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_hash_fn) (_In_ sai_object_id_t hash_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t hash_id)</argsstring>
+        <name>sai_remove_hash_fn</name>
+        <briefdescription>
+<para>Remove hash. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hash_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___s_a_i_s_t_a_t_u_s_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="367" column="9" bodyfile="inc/saihash.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga94474b63f95e3a96b936741bc8de13ac" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_hash_attribute_fn) (_In_ sai_object_id_t hash_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t hash_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_hash_attribute_fn</name>
+        <briefdescription>
+<para>Set hash attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hash_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___s_a_i_s_t_a_t_u_s_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="378" column="9" bodyfile="inc/saihash.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga21201404b1915d0efe93ebedc1356d77" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_hash_attribute_fn) (_In_ sai_object_id_t hash_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hash_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_hash_attribute_fn</name>
+        <briefdescription>
+<para>Get hash attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hash_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Hash id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group___s_a_i_s_t_a_t_u_s_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="391" column="9" bodyfile="inc/saihash.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group___s_a_i_h_a_s_h_1ga829aaa874e78e9d7b7d0ee6cf19f6f40" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__hash__api__t" kindref="compound">_sai_hash_api_t</ref></type>
+        <definition>typedef struct _sai_hash_api_t sai_hash_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hash_api_t</name>
+        <briefdescription>
+<para>Hash methods, retrieved via <ref refid="group___s_a_i_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="inc/saihash.h" line="410" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI Hash interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="25"><highlight class="preprocessor">#if<sp/>!defined<sp/>(__SAIHASH_H_)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SAIHASH_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="saitypes_8h" kindref="compound">saitypes.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="group___s_a_i_h_a_s_h_1gafcc31874ad58eb9d8c620352bd1e5b4e" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___s_a_i_h_a_s_h_1gafcc31874ad58eb9d8c620352bd1e5b4e" kindref="member">_sai_native_hash_field_t</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead695bcf3d99c7cdc3485c680d942e5a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead695bcf3d99c7cdc3485c680d942e5a4" kindref="member">SAI_NATIVE_HASH_FIELD_SRC_IP</ref><sp/>=<sp/>0x00000000,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eab7009ae1de45030fafe7faa07d8cb6c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eab7009ae1de45030fafe7faa07d8cb6c9" kindref="member">SAI_NATIVE_HASH_FIELD_DST_IP</ref><sp/>=<sp/>0x00000001,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf3987ca4b48f676598b51759f1db5c39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf3987ca4b48f676598b51759f1db5c39" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_SRC_IP</ref><sp/>=<sp/>0x00000002,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea80caff89cc144e053bf0ef02ae25410b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea80caff89cc144e053bf0ef02ae25410b" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_DST_IP</ref><sp/>=<sp/>0x00000003,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eadd63d8a95550656f54ce224e6afb58ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eadd63d8a95550656f54ce224e6afb58ee" kindref="member">SAI_NATIVE_HASH_FIELD_SRC_IPV4</ref><sp/>=<sp/>0x00000019,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea93cbc58e012ed734a558cf1d571b0e58" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea93cbc58e012ed734a558cf1d571b0e58" kindref="member">SAI_NATIVE_HASH_FIELD_DST_IPV4</ref><sp/>=<sp/>0x0000001a,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3c9cbd80abb6d3712c99abfc022bac40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3c9cbd80abb6d3712c99abfc022bac40" kindref="member">SAI_NATIVE_HASH_FIELD_SRC_IPV6</ref><sp/>=<sp/>0x0000001b,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea4dd4cc3db824239bb2ef9bce5cdc37c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea4dd4cc3db824239bb2ef9bce5cdc37c3" kindref="member">SAI_NATIVE_HASH_FIELD_DST_IPV6</ref><sp/>=<sp/>0x0000001c,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea367b671a9089f8bb7a919130d632e630" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea367b671a9089f8bb7a919130d632e630" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_SRC_IPV4</ref><sp/>=<sp/>0x0000001d,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eabd2ae9a9f46fc373d9c1041c55d9bafb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eabd2ae9a9f46fc373d9c1041c55d9bafb" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_DST_IPV4</ref><sp/>=<sp/>0x0000001e,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eac34993e66f25ad4d641169894a760b60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eac34993e66f25ad4d641169894a760b60" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_SRC_IPV6</ref><sp/>=<sp/>0x0000001f,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea5509656694ca609c823c4eb77a88d6aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea5509656694ca609c823c4eb77a88d6aa" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_DST_IPV6</ref><sp/>=<sp/>0x00000020,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea9cfe07ba39a97aa861ff25284a3064ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea9cfe07ba39a97aa861ff25284a3064ac" kindref="member">SAI_NATIVE_HASH_FIELD_VLAN_ID</ref><sp/>=<sp/>0x00000004,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead6f2c3f5a7b9733044d29c9d049d6243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead6f2c3f5a7b9733044d29c9d049d6243" kindref="member">SAI_NATIVE_HASH_FIELD_IP_PROTOCOL</ref><sp/>=<sp/>0x00000005,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea302ec3e14c84b996c174be567c70da16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea302ec3e14c84b996c174be567c70da16" kindref="member">SAI_NATIVE_HASH_FIELD_ETHERTYPE</ref><sp/>=<sp/>0x00000006,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea881ea9cf3125c1adfe63621cd5e98c4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea881ea9cf3125c1adfe63621cd5e98c4a" kindref="member">SAI_NATIVE_HASH_FIELD_L4_SRC_PORT</ref><sp/>=<sp/>0x00000007,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea20f5981b96e26949939851e44260e540" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea20f5981b96e26949939851e44260e540" kindref="member">SAI_NATIVE_HASH_FIELD_L4_DST_PORT</ref><sp/>=<sp/>0x00000008,</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea0affb08dba095285c715b71fa43fbf2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea0affb08dba095285c715b71fa43fbf2e" kindref="member">SAI_NATIVE_HASH_FIELD_SRC_MAC</ref><sp/>=<sp/>0x00000009,</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eae8b5c91afaf80e3cba98685caca2e8ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eae8b5c91afaf80e3cba98685caca2e8ca" kindref="member">SAI_NATIVE_HASH_FIELD_DST_MAC</ref><sp/>=<sp/>0x0000000a,</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea69e6c7b1f8f2e74f7ac7988955b589ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea69e6c7b1f8f2e74f7ac7988955b589ea" kindref="member">SAI_NATIVE_HASH_FIELD_IN_PORT</ref><sp/>=<sp/>0x0000000b,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3938d937da86363f158be1f3b354edbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3938d937da86363f158be1f3b354edbc" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_IP_PROTOCOL</ref><sp/>=<sp/>0x0000000c,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf761bdad60066793b99f06d2f38cfa6f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf761bdad60066793b99f06d2f38cfa6f" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_ETHERTYPE</ref><sp/>=<sp/>0x0000000d,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea6a2b7c2e2d6ccd56060ffb2b9143ee10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea6a2b7c2e2d6ccd56060ffb2b9143ee10" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_L4_SRC_PORT</ref><sp/>=<sp/>0x0000000e,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eab9d17d96e39807f7ef28e41d175d048e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eab9d17d96e39807f7ef28e41d175d048e" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_L4_DST_PORT</ref><sp/>=<sp/>0x0000000f,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eae5c11bb6d3ec50b3db78bee7149ffc78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eae5c11bb6d3ec50b3db78bee7149ffc78" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_SRC_MAC</ref><sp/>=<sp/>0x00000010,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea31122d88e74bbcc492f113c70186b01b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea31122d88e74bbcc492f113c70186b01b" kindref="member">SAI_NATIVE_HASH_FIELD_INNER_DST_MAC</ref><sp/>=<sp/>0x00000011,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf0266386ace70c2438533a2950ee54e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eaf0266386ace70c2438533a2950ee54e8" kindref="member">SAI_NATIVE_HASH_FIELD_MPLS_LABEL_ALL</ref><sp/>=<sp/>0x00000012,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea23435c7074971d9b6257f171017eff4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea23435c7074971d9b6257f171017eff4a" kindref="member">SAI_NATIVE_HASH_FIELD_MPLS_LABEL_0</ref><sp/>=<sp/>0x00000013,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3b9cf1d946a11d9cb950620a2ad2200c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea3b9cf1d946a11d9cb950620a2ad2200c" kindref="member">SAI_NATIVE_HASH_FIELD_MPLS_LABEL_1</ref><sp/>=<sp/>0x00000014,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea5dc458366ebec2278b2624c1c02c3e92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea5dc458366ebec2278b2624c1c02c3e92" kindref="member">SAI_NATIVE_HASH_FIELD_MPLS_LABEL_2</ref><sp/>=<sp/>0x00000015,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea99b6a612c12493f178acb68eb58cf524" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea99b6a612c12493f178acb68eb58cf524" kindref="member">SAI_NATIVE_HASH_FIELD_MPLS_LABEL_3</ref><sp/>=<sp/>0x00000016,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead89f14cf0086d4100156be3280782bbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ead89f14cf0086d4100156be3280782bbc" kindref="member">SAI_NATIVE_HASH_FIELD_MPLS_LABEL_4</ref><sp/>=<sp/>0x00000017,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eac1c59f2366a9d4c3c17e8a4ce5c1c07b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4eac1c59f2366a9d4c3c17e8a4ce5c1c07b" kindref="member">SAI_NATIVE_HASH_FIELD_IPV6_FLOW_LABEL</ref><sp/>=<sp/>0x00000018,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173" refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea21d19a4bb7770bbf36c204b722bb470d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggafcc31874ad58eb9d8c620352bd1e5b4ea21d19a4bb7770bbf36c204b722bb470d" kindref="member">SAI_NATIVE_HASH_FIELD_NONE</ref><sp/>=<sp/>0x00000021,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}<sp/><ref refid="group___s_a_i_h_a_s_h_1gaff8f0a65800c12f553728c9f8fcef704" kindref="member">sai_native_hash_field_t</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="group___s_a_i_h_a_s_h_1gaa1ffe88ed319e0474cb6edf2a97c9d80" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___s_a_i_h_a_s_h_1gaa1ffe88ed319e0474cb6edf2a97c9d80" kindref="member">_sai_fine_grained_hash_field_attr_t</ref></highlight></codeline>
+<codeline lineno="181"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185" refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a0d164c178f5b40348d4642334f6a16bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a0d164c178f5b40348d4642334f6a16bc" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_START</ref>,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80ac5c287667b46192f3b3657e2c3bad920" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80ac5c287667b46192f3b3657e2c3bad920" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_NATIVE_HASH_FIELD</ref><sp/>=<sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a0d164c178f5b40348d4642334f6a16bc" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_START</ref>,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203" refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a17771d987f052d0c7f6f04a64ffaf951" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a17771d987f052d0c7f6f04a64ffaf951" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_IPV4_MASK</ref>,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a0b0903444ef1448f8239ee761659a56c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a0b0903444ef1448f8239ee761659a56c" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_IPV6_MASK</ref>,</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225" refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80ab4ea6dd3ac77bb2aeaced5d799451cf4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80ab4ea6dd3ac77bb2aeaced5d799451cf4" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_SEQUENCE_ID</ref>,</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230" refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a2cbf7560d8a37229b27478a720431380" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a2cbf7560d8a37229b27478a720431380" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_END</ref>,</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a4fc797460cf6223537f3ab62dd7515de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a4fc797460cf6223537f3ab62dd7515de" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_CUSTOM_RANGE_START</ref><sp/>=<sp/>0x10000000,</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236" refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a917e8bda1bf71203df54b4076036f83e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggaa1ffe88ed319e0474cb6edf2a97c9d80a917e8bda1bf71203df54b4076036f83e" kindref="member">SAI_FINE_GRAINED_HASH_FIELD_ATTR_CUSTOM_RANGE_END</ref></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}<sp/><ref refid="group___s_a_i_h_a_s_h_1ga3da50c10dba98635dfc71a140ae201d2" kindref="member">sai_fine_grained_hash_field_attr_t</ref>;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243" refid="group___s_a_i_h_a_s_h_1gacf33b16b3be3be8e52293d3be67296f2" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group___s_a_i_h_a_s_h_1gacf33b16b3be3be8e52293d3be67296f2" kindref="member">_sai_hash_attr_t</ref></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="248" refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a4184793b57e83ab1a822936334e05f13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a4184793b57e83ab1a822936334e05f13" kindref="member">SAI_HASH_ATTR_START</ref>,</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257" refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a17eb90441fc43ee36062126830c47018" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a17eb90441fc43ee36062126830c47018" kindref="member">SAI_HASH_ATTR_NATIVE_HASH_FIELD_LIST</ref><sp/>=<sp/><ref refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a4184793b57e83ab1a822936334e05f13" kindref="member">SAI_HASH_ATTR_START</ref>,</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2ab9669254f90c0194654987c4275d04d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2ab9669254f90c0194654987c4275d04d1" kindref="member">SAI_HASH_ATTR_UDF_GROUP_LIST</ref>,</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a18cd1f3beaed46b889a3a6d5635d7187" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a18cd1f3beaed46b889a3a6d5635d7187" kindref="member">SAI_HASH_ATTR_FINE_GRAINED_HASH_FIELD_LIST</ref>,</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a9060751615e5b1a3761c25c19342b22c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a9060751615e5b1a3761c25c19342b22c" kindref="member">SAI_HASH_ATTR_END</ref>,</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285" refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2aee0e5b082bc9cba6f860cd244a5972f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2aee0e5b082bc9cba6f860cd244a5972f1" kindref="member">SAI_HASH_ATTR_CUSTOM_RANGE_START</ref><sp/>=<sp/>0x10000000,</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a6a55ede6c3f01a11adf3587c11622486" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ggacf33b16b3be3be8e52293d3be67296f2a6a55ede6c3f01a11adf3587c11622486" kindref="member">SAI_HASH_ATTR_CUSTOM_RANGE_END</ref></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal">}<sp/><ref refid="group___s_a_i_h_a_s_h_1ga7d62d7c094e7d32960599359a5fd67d4" kindref="member">sai_hash_attr_t</ref>;</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="group___s_a_i_h_a_s_h_1ga06b8e8eb6fa591a6b0d6c51e6041ad1d" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sai_status_t<sp/>(*<ref refid="group___s_a_i_h_a_s_h_1ga06b8e8eb6fa591a6b0d6c51e6041ad1d" kindref="member">sai_create_fine_grained_hash_field_fn</ref>)(</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Out_<sp/>sai_object_id_t<sp/>*fine_grained_hash_field_id,</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>sai_object_id_t<sp/>switch_id,</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>uint32_t<sp/>attr_count,</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__sai__attribute__t" kindref="compound">sai_attribute_t</ref><sp/>*attr_list);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="group___s_a_i_h_a_s_h_1gae2e75c15f6bb33d1c593f69b31ccd4fe" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sai_status_t<sp/>(*<ref refid="group___s_a_i_h_a_s_h_1gae2e75c15f6bb33d1c593f69b31ccd4fe" kindref="member">sai_remove_fine_grained_hash_field_fn</ref>)(</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>sai_object_id_t<sp/>fine_grained_hash_field_id);</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326" refid="group___s_a_i_h_a_s_h_1gaa606c1e9c2477f70564bd5305ec1340a" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sai_status_t<sp/>(*<ref refid="group___s_a_i_h_a_s_h_1gaa606c1e9c2477f70564bd5305ec1340a" kindref="member">sai_set_fine_grained_hash_field_attribute_fn</ref>)(</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>sai_object_id_t<sp/>fine_grained_hash_field_id,</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__sai__attribute__t" kindref="compound">sai_attribute_t</ref><sp/>*attr);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="group___s_a_i_h_a_s_h_1ga44286035158127eb2b24c2e7acf0be77" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sai_status_t<sp/>(*<ref refid="group___s_a_i_h_a_s_h_1ga44286035158127eb2b24c2e7acf0be77" kindref="member">sai_get_fine_grained_hash_field_attribute_fn</ref>)(</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>sai_object_id_t<sp/>fine_grained_hash_field_id,</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>uint32_t<sp/>attr_count,</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Inout_<sp/><ref refid="struct__sai__attribute__t" kindref="compound">sai_attribute_t</ref><sp/>*attr_list);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354" refid="group___s_a_i_h_a_s_h_1ga3c12c6e257eb324cebf98017fd8e7f16" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sai_status_t<sp/>(*<ref refid="group___s_a_i_h_a_s_h_1ga3c12c6e257eb324cebf98017fd8e7f16" kindref="member">sai_create_hash_fn</ref>)(</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Out_<sp/>sai_object_id_t<sp/>*hash_id,</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>sai_object_id_t<sp/>switch_id,</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>uint32_t<sp/>attr_count,</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__sai__attribute__t" kindref="compound">sai_attribute_t</ref><sp/>*attr_list);</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367" refid="group___s_a_i_h_a_s_h_1ga35ba3a63f1581d746de9b1e3077bffde" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sai_status_t<sp/>(*<ref refid="group___s_a_i_h_a_s_h_1ga35ba3a63f1581d746de9b1e3077bffde" kindref="member">sai_remove_hash_fn</ref>)(</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>sai_object_id_t<sp/>hash_id);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="378" refid="group___s_a_i_h_a_s_h_1ga94474b63f95e3a96b936741bc8de13ac" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sai_status_t<sp/>(*<ref refid="group___s_a_i_h_a_s_h_1ga94474b63f95e3a96b936741bc8de13ac" kindref="member">sai_set_hash_attribute_fn</ref>)(</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>sai_object_id_t<sp/>hash_id,</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct__sai__attribute__t" kindref="compound">sai_attribute_t</ref><sp/>*attr);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391" refid="group___s_a_i_h_a_s_h_1ga21201404b1915d0efe93ebedc1356d77" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>sai_status_t<sp/>(*<ref refid="group___s_a_i_h_a_s_h_1ga21201404b1915d0efe93ebedc1356d77" kindref="member">sai_get_hash_attribute_fn</ref>)(</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>sai_object_id_t<sp/>hash_id,</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_In_<sp/>uint32_t<sp/>attr_count,</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_Inout_<sp/><ref refid="struct__sai__attribute__t" kindref="compound">sai_attribute_t</ref><sp/>*attr_list);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="399" refid="struct__sai__hash__api__t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__sai__hash__api__t" kindref="compound">_sai_hash_api_t</ref></highlight></codeline>
+<codeline lineno="400"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ga3c12c6e257eb324cebf98017fd8e7f16" kindref="member">sai_create_hash_fn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>create_hash;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ga35ba3a63f1581d746de9b1e3077bffde" kindref="member">sai_remove_hash_fn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remove_hash;</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ga94474b63f95e3a96b936741bc8de13ac" kindref="member">sai_set_hash_attribute_fn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set_hash_attribute;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ga21201404b1915d0efe93ebedc1356d77" kindref="member">sai_get_hash_attribute_fn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>get_hash_attribute;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ga06b8e8eb6fa591a6b0d6c51e6041ad1d" kindref="member">sai_create_fine_grained_hash_field_fn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>create_fine_grained_hash_field;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1gae2e75c15f6bb33d1c593f69b31ccd4fe" kindref="member">sai_remove_fine_grained_hash_field_fn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>remove_fine_grained_hash_field;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1gaa606c1e9c2477f70564bd5305ec1340a" kindref="member">sai_set_fine_grained_hash_field_attribute_fn</ref><sp/><sp/><sp/>set_fine_grained_hash_field_attribute;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group___s_a_i_h_a_s_h_1ga44286035158127eb2b24c2e7acf0be77" kindref="member">sai_get_fine_grained_hash_field_attribute_fn</ref><sp/><sp/><sp/>get_fine_grained_hash_field_attribute;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal">}<sp/><ref refid="group___s_a_i_h_a_s_h_1ga829aaa874e78e9d7b7d0ee6cf19f6f40" kindref="member">sai_hash_api_t</ref>;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="inc/saihash.h"/>
+  </compounddef>
+</doxygen>

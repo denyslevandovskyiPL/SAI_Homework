@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_8c0381a6091af7a47ae909a45b674508" kind="dir">
+    <compoundname>/home/denys.levandovskyi/Homework/SAI/SAI_HW/experimental</compoundname>
+    <innerfile refid="saiexperimentalbmtor_8h">saiexperimentalbmtor.h</innerfile>
+    <innerfile refid="saiextensions_8h">saiextensions.h</innerfile>
+    <innerfile refid="saiswitchextensions_8h">saiswitchextensions.h</innerfile>
+    <innerfile refid="saitypesextensions_8h">saitypesextensions.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/denys.levandovskyi/Homework/SAI/SAI_HW/experimental/"/>
+  </compounddef>
+</doxygen>
